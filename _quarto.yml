@@ -1,0 +1,7 @@
+project:
+  title: "Meeting Minutes"
+  type: website
+  output-dir: docs
+
+editor: visual
+
