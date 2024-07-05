@@ -1,0 +1,121 @@
+---
+title: "`r paste(params$title)`"
+format: 
+  html:
+    toc: true
+    toc-title: "Jump To"
+    theme:
+      - lux
+    logo: "logo-en.svg"
+    other-links:
+    - text: Download Report
+      href: "`r paste0(params$title,'.pdf')`"
+      icon: download
+params:
+  title: "Reunion d'Échange sur la Situation et Riposte à l'Épidemie de Rougeole au Burundi"
+execute: 
+  echo: false
+  warning: false
+---
+
+
+```{r}
+#| label: setup
+#| include: false
+
+library(targets)
+library(tarchetypes)
+library(tidyverse)
+library(glue)
+library(quarto)
+```
+
+```{r}
+#| label: parameters
+tar_load_everything()
+
+
+```
+
+::: {.callout-note}
+
+## Dernière mise à jour
+
+`r meeting_date`
+
+:::
+
+
+## Participants  la réunion
+Cette réunion s'est déroulée en présence de:
+
+* `r participant1`
+- `r participant2`
+* `r participant3`
+* `r participant4`
+* `r participant6`
+* `r participant7`
+* `r participant8`
+* `r participant9`
+
+## Revue de la situation épidémiologique dans le pays 
+
+Quelques points saillants sur la situation épidémiologique de la rougeole au Burundi:
+
+`r glue({maj_epidemie})`
+
+
+## Principaux Défis 
+
+Les principaux défis identifiés par le PEV sont: 
+
+`r glue({defis})`
+
+## Appui Demandé par le PEV 
+
+Le PEV sollicite des partenaires sur: 
+
+`r glue({gap})`
+
+## Perspectives
+
+Il a été convenu à la suite de la reunion de:
+
+`r glue({pers})`
+
+:::{.callout-note}
+
+## Durée et logistique de la réunion
+
+Cette reunion s'est déroulée entre 14 et 15 h 16 (heure de Libreville) sur Microsoft Teams avec pour modérateur `r participant7`
+
+:::
+
+
+
+
+```{r}
+#| label: download
+#| include: false
+quarto_render(input = "output.qmd", execute_params = list("title" = title), output_file = glue("{title}.pdf"))
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
