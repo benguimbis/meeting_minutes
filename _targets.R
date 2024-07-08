@@ -23,7 +23,7 @@ tar_plan(
   participant2 = "Dr Kaya, UCN Lead OMS Burundi",
   participant3 = "Dr Vincent Sodjinou, Hub des urgences Afrique Centrale et de l'Ouest",
   participant4 = "Dr Mohamed Omer, UNICEF",
-  participant6 = "Alice Wimmer, OMS-HQ",
+  participant6 = "Dr Alice Wimmer, OMS-HQ",
   participant7 = "Dr Franck Mboussou, IST-CA",
   participant8 = "Dr Edie Alain Kemenang, IST-CA",
   participant9 = "Mr Benedict Nguimbis, IST-CA",
@@ -60,6 +60,5 @@ gap = " - Renforcement de la surveillance communautaire<br>
 
 pers = "- Organisation d'une réunion pratique pour les 5 districts en épidemie avec l'IST-CA et les partenaires <br>
   - Établir des listes linéaires de cas dans chaque district<br>"
-
 
 )

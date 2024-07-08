@@ -3,5 +3,25 @@ project:
   type: website
   output-dir: docs
 
-editor: visual
+website: 
+  title: IST-CA Meeting Minutes
+  sidebar: 
+    logo: logo-en.svg
+    logo-href: index.qmd
+    style: "floating"
+    search: true
+    contents:
+      - text: "Minutes List"
+        href: index.qmd
+      - section: "Countries Meetings Minutes"
+        contents: 
+          - text: "Burundi Response Meeting"
+            href: meeting_report.qmd
 
+format: 
+  html: 
+    theme: lux
+    css: styles.css
+    toc: true
+    toc-depth: 3
+    toc-title: "Jump To"
