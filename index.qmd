@@ -1,6 +1,9 @@
 ---
 title: ""
-format: html
+format: 
+  html:
+    other-links: false
+
 
 ---
 

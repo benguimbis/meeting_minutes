@@ -9,7 +9,7 @@ format:
     logo: "logo-en.svg"
     other-links:
     - text: Download Report
-      href: "`r paste0(params$title,'.pdf')`"
+      href: "Reunion d'Échange sur la Situation et Riposte à l'Épidemie de Rougeole au Burundi.pdf"
       icon: download
 params:
   title: "Reunion d'Échange sur la Situation et Riposte à l'Épidemie de Rougeole au Burundi"
